@@ -1,0 +1,231 @@
+.card__container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+
+.card__img__container {
+    width: 60%;
+    /* background-color: pink; */
+    flex-direction: column;
+}
+.card__img__container .img__card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.6); */
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+.card__img__container .img__card .custom_tshirt {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.6);
+}
+
+.card__img__container .img__card .img_details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img_details {
+    color: #fff;
+    text-align: center;
+}
+
+.img__card .tshirtImg {
+    width: 80px;
+    height: 80px;
+}
+@media (min-width: 1000px) {
+    .img__card .tshirtImg {
+        width: 350px;
+        height: 200px;
+    }
+}
+
+.img_details .content {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* ---------------Card-form-------------- */
+
+.card_form {
+    font-family: Arial, Helvetica, sans-serif;
+    width: calc(100% - 60%);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 2rem 1rem;
+    margin: 2rem 1rem;
+}
+
+.card__container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card_form .formDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_form .userInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.formDetails h3 {
+    margin: 0.5rem 0;
+}
+
+.card_form .formDetails .tshirt_colorInput {
+    width: 100%;
+    display: flex;
+    gap: 2;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block-start: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card_form .tshirt_colorInput img {
+    height: 50px;
+    width: 50px;
+}
+
+@media (min-width: 678px) {
+    .card_form .tshirt_colorInput img {
+        height: 100px;
+        width: 100px;
+        padding: 0.5rem;
+    }
+}
+
+.card_form .tshirt_colorInput img:hover,
+.card_form .tshirt_colorInput img:active {
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.card_form .formDetails .userInput .userImg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userImg .progress {
+    width: 100px;
+    height: 10px;
+    mask: linear-gradient(90deg, #000 50%, #0000 0) 0/1;
+    -webkit-mask: linear-gradient(90deg, #000 50%, #0000 0) 0/10%;
+    background: linear-gradient(#000 0 0) 0/0% no-repeat #ddd;
+    animation: p4 2s infinite steps(6);
+}
+@keyframes p4 {
+    100% {
+        background-size: 120%;
+    }
+}
+
+.userInput .uploadImg {
+    background-color: #21a1a6;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem 0;
+    border: none;
+    width: 20%;
+}
+
+.userInput .userText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.userInput .userText label {
+    margin-top: 1rem;
+}
+.userInput .userText input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.text_Size_Color {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.text_Size_Color .TextSize {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 0.5rem;
+}
+
+.text_Size_Color .textSize .slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #21a1a6;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: #21a1a6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.text_Size_Color .TextColor {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 0.5rem;
+}
+.text_Size_Color .TextColor .colorInput {
+    margin-top: 0.5rem;
+}
+.text_Size_Color .TextColor .colorInput label {
+    margin-left: 1rem;
+}
